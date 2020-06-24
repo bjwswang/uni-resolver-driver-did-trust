@@ -1,0 +1,25 @@
+{
+  "name": "uni-resolver-driver-did-trust",
+  "version": "1.0.0",
+  "author": "wangshuai7 <wangshuai7@360.cn>",
+  "license": "MIT",
+  "main": "build/src/server.js",
+  "scripts": {
+    "build": "tsoa spec-and-routes && rm -rf dist  && tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@types/swagger-ui-express": "^4.1.2",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.1.4",
+    "tsoa": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.13",
+    "typescript": "^3.9.5"
+  }
+}

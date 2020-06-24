@@ -1,0 +1,89 @@
+{
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {},
+		"securitySchemes": {}
+	},
+	"info": {
+		"title": "uni-resolver-driver-did-trust",
+		"version": "1.0.0",
+		"license": {
+			"name": "MIT"
+		},
+		"contact": {
+			"name": "wangshuai7 ",
+			"email": "wangshuai7@360.cn"
+		}
+	},
+	"openapi": "3.0.0",
+	"paths": {
+		"/1.0/identifiers/{identifier}": {
+			"get": {
+				"operationId": "GetDids",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"400": {
+						"description": "invalid input!"
+					},
+					"404": {
+						"description": "did not found"
+					},
+					"500": {
+						"description": "server error"
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "identifier",
+						"required": true,
+						"schema": {
+							"type": "string"
+						},
+						"examples": {
+							"Example 1": {
+								"value": "did:trust:cert.EiA70jCigP-sZBtFSs3EUhFfJTB2UwinK_oh_EGh20ucvQ"
+							},
+							"Example 2": {
+								"value": "did:trust:cert.EiDJMati_kVGZUqNILyPJ-4V0ZcsZQRaMaOfYC1Fp14k9A"
+							}
+						}
+					},
+					{
+						"in": "header",
+						"name": "Accept",
+						"required": false,
+						"schema": {
+							"type": "string"
+						},
+						"examples": {
+							"Example 1": {
+								"value": "application/did+ld+json"
+							},
+							"Example 2": {
+								"value": "application/ld+json;profile=\"https://w3c-ccg.github.io/did-resolution/\""
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "/"
+		}
+	]
+}
