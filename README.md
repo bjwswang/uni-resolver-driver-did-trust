@@ -18,8 +18,8 @@ did:trust:cert.EiDJMati_kVGZUqNILyPJ-4V0ZcsZQRaMaOfYC1Fp14k9A
 ## Build and Run (Docker)
 
 ```
-docker build -f ./docker/Dockerfile . -t bjwswang/uni-resolver-driver-did-trust
-docker run -p 8080:8080 bjwswang/uni-resolver-driver-did-trust
+docker build -f ./docker/Dockerfile . -t bjwswang/driver-did-trust
+docker run -p 8080:8080 bjwswang/driver-did-trust
 curl -X GET http://localhost:8080/1.0/identifiers/did:trust:cert.EiCd1SYQYXVGCb2Cs2wu3d-UBZNm0xb7kY5koZ84tp5z6Q
 ```
 
