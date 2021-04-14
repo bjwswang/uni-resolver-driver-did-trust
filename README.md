@@ -11,8 +11,8 @@ This is an [Universal Resolver](https://github.com/decentralized-identity/univer
 ## Example DIDs
 
 ```
-did:trust:cert.EiBJ6qjVXgJ-A8xnaUiu4rtLDgeobQYgRWjMV49aCak4HQ
-did:trust:licence.EiAMIYqz-ZlmFMrH6GqADqZThYmgV-x38Zwcjl6WR9qGhA
+did:trust:cert.EiDi8NEZVyvqmHeWRB5kUagWo3sDSQlCtl1nZ1vVgLdozw
+did:trust:license.EiBdAy5GeNr9qcVQ-40fOwMVQW2CRGT2M238cp6yLJLnGg
 ```
 
 ## Build and Run (Docker)
@@ -20,7 +20,7 @@ did:trust:licence.EiAMIYqz-ZlmFMrH6GqADqZThYmgV-x38Zwcjl6WR9qGhA
 ```
 docker build -f ./docker/Dockerfile . -t bjwswang/driver-did-trust:latest
 docker run -p 8080:8080 bjwswang/driver-did-trust:latest
-curl -X GET http://localhost:8080/1.0/identifiers/did:trust:cert.EiBJ6qjVXgJ-A8xnaUiu4rtLDgeobQYgRWjMV49aCak4HQ
+curl -X GET http://localhost:8080/1.0/identifiers/did:trust:cert.EiDi8NEZVyvqmHeWRB5kUagWo3sDSQlCtl1nZ1vVgLdozw
 ```
 
 ## Build and Run (NodeJS)
@@ -52,7 +52,7 @@ The driver returns the following metadata in addition to a DID document:
 
 ```
   "resolverMetadata": {
-    "identifier": "did:trust:cert.EiBJ6qjVXgJ-A8xnaUiu4rtLDgeobQYgRWjMV49aCak4HQ",
+    "identifier": "did:trust:cert.EiDi8NEZVyvqmHeWRB5kUagWo3sDSQlCtl1nZ1vVgLdozw",
     "driverId": "driver-universalresolver/driver-did-trust",
     "duration": 38,
     "retrieved": "Fri, 19 Jun 2020 11:33:46 GMT"
