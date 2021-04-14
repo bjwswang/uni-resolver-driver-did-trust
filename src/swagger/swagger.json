@@ -54,10 +54,10 @@
 						},
 						"examples": {
 							"Example 1": {
-								"value": "did:trust:cert.EiA70jCigP-sZBtFSs3EUhFfJTB2UwinK_oh_EGh20ucvQ"
+								"value": "did:trust:cert.EiDi8NEZVyvqmHeWRB5kUagWo3sDSQlCtl1nZ1vVgLdozw"
 							},
 							"Example 2": {
-								"value": "did:trust:cert.EiDJMati_kVGZUqNILyPJ-4V0ZcsZQRaMaOfYC1Fp14k9A"
+								"value": "did:trust:license.EiBdAy5GeNr9qcVQ-40fOwMVQW2CRGT2M238cp6yLJLnGg"
 							}
 						}
 					},

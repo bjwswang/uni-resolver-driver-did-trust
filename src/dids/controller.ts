@@ -16,8 +16,8 @@ const valideTrustDid = `^did:trust:([0-9a-zA-Z-_.]*)$`
 @Route("/1.0/identifiers")
   export class DidsController extends Controller {
   /**
-   * @example identifier "did:trust:cert.EiA70jCigP-sZBtFSs3EUhFfJTB2UwinK_oh_EGh20ucvQ"
-   * @example identifier "did:trust:cert.EiDJMati_kVGZUqNILyPJ-4V0ZcsZQRaMaOfYC1Fp14k9A"
+   * @example identifier "did:trust:cert.EiDi8NEZVyvqmHeWRB5kUagWo3sDSQlCtl1nZ1vVgLdozw"
+   * @example identifier "did:trust:license.EiBdAy5GeNr9qcVQ-40fOwMVQW2CRGT2M238cp6yLJLnGg"
    * @example accept "application/did+ld+json"
    * @example accept "application/ld+json;profile=\"https://w3c-ccg.github.io/did-resolution/\""
    */
